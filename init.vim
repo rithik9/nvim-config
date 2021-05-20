@@ -1,14 +1,14 @@
 set number
 set nocompatible
-filetype off
+set mouse=a
+colorscheme orbital
+filetype on
 syntax enable
 call plug#begin('~/.config/nvim/plugged')
 Plug 'tpope/vim-fugitive'
 Plug 'preservim/nerdtree'
-Plug 'frazrepo/vim-rainbow'
 Plug 'davidhalter/jedi-vim'
-Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'fcpg/vim-orbital'
 call plug#end()
-
+ 
 map <silent> <C-n> :NERDTreeFocus<CR>
-
